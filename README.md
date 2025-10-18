@@ -1,18 +1,16 @@
-# Galicia 2025 — Revista (Vite + React + Tailwind)
+# Galicia 2025 — Vercel Ready
 
-## Uso rápido
-```bash
-npm install
-npm run dev
-```
+## Deploy (Vercel)
+- Framework: Vite
+- Build Command: `npm run build`
+- Output Directory: `dist`
 
-Luego abre el enlace que aparece (por defecto http://localhost:5173).
+### Pasos rápidos
+1. `npm install`
+2. `git init && git add . && git commit -m "init"`
+3. Crea repo en GitHub y `git remote add origin ... && git push -u origin main`
+4. En Vercel: Importa el repo → Deploy
 
-## Estructura
-- `src/revista/Galicia2025Revista.jsx` — Componente principal de la revista
-- `src/main.jsx` — Punto de entrada
-- `src/index.css` — Estilos con Tailwind
-
-## Notas
-- Para insertar el mapa, pega el iframe de Google My Maps en la sección **Mapa del Recorrido**.
-- Para exportar a PDF, usa la impresión del navegador (Ctrl/Cmd+P).
+### Notas
+- `vite.config.js` + `@vitejs/plugin-react` incluidos.
+- `build` llama a Vite vía `node` para evitar errores 126.

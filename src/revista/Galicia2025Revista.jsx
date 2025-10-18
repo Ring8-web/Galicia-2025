@@ -1,6 +1,3 @@
-// Galicia 2025 — Plantilla de revista web (scroll vertical)
-// Estilo: Clásico de revista de viajes + Paleta verde atlántico + Mapa + Línea de tiempo
-
 import { useEffect, useState } from "react";
 
 export default function Galicia2025Revista() {
@@ -50,14 +47,12 @@ export default function Galicia2025Revista() {
       </header>
 
       <main className="pt-20">
-        {/* PORTADA */}
         <section id="portada" className="relative">
           <div className="max-w-6xl mx-auto px-4">
             <div className="grid md:grid-cols-12 gap-6 items-center min-h-[70vh]">
               <div className="md:col-span-7">
                 <h1 className="font-serif text-4xl md:text-6xl leading-tight text-emerald-800">Galicia 2025</h1>
                 <p className="mt-4 text-lg md:text-xl text-gray-700">Subtítulo o lema del viaje — añade una frase evocadora aquí.</p>
-                <p className="mt-6 max-w-prose text-gray-600">Breve resumen del viaje: propósito, lugares, y expectativas del lector.</p>
               </div>
               <div className="md:col-span-5">
                 <div className="aspect-[4/5] bg-gray-200 rounded-xl shadow-inner" aria-label="Imagen de portada"></div>
@@ -66,7 +61,6 @@ export default function Galicia2025Revista() {
           </div>
         </section>
 
-        {/* ÍNDICE */}
         <section id="indice" className="mt-16 md:mt-24 print:break-before-page">
           <div className="max-w-6xl mx-auto px-4">
             <div className="border-y py-8">
@@ -87,7 +81,6 @@ export default function Galicia2025Revista() {
           </div>
         </section>
 
-        {/* INTRODUCCIÓN */}
         <section id="introduccion" className="mt-16 md:mt-24">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="font-serif text-3xl text-emerald-800">Introducción</h2>
@@ -95,18 +88,15 @@ export default function Galicia2025Revista() {
           </div>
         </section>
 
-        {/* MAPA DEL RECORRIDO */}
         <section id="mapa" className="mt-16 md:mt-24">
           <div className="max-w-6xl mx-auto px-4">
             <h2 className="font-serif text-3xl text-emerald-800">Mapa del Recorrido</h2>
-            <p className="mt-3 text-gray-700 max-w-3xl">Agrega aquí un mapa interactivo embebido de Google My Maps o similar.</p>
             <div className="mt-6 aspect-video rounded-lg overflow-hidden border" aria-label="Mapa embebido">
               <div className="w-full h-full bg-gray-100 grid place-content-center text-sm text-gray-600">Añade aquí el iframe del mapa</div>
             </div>
           </div>
         </section>
 
-        {/* LÍNEA DE TIEMPO */}
         <section id="timeline" className="mt-16 md:mt-24">
           <div className="max-w-6xl mx-auto px-4">
             <h2 className="font-serif text-3xl text-emerald-800">Línea de tiempo</h2>
@@ -127,12 +117,9 @@ export default function Galicia2025Revista() {
           </div>
         </section>
 
-        {/* DESTINOS */}
         <section id="destinos" className="mt-16 md:mt-24 print:break-before-page">
           <div className="max-w-6xl mx-auto px-4">
-            <div className="flex items-end justify-between">
-              <h2 className="font-serif text-3xl text-emerald-800">Destinos</h2>
-            </div>
+            <h2 className="font-serif text-3xl text-emerald-800">Destinos</h2>
             <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {Array.from({ length: 6 }).map((_, idx) => (
                 <article key={idx} className="border rounded-xl overflow-hidden group">
@@ -147,28 +134,24 @@ export default function Galicia2025Revista() {
           </div>
         </section>
 
-        {/* SABORES */}
         <section id="sabores" className="mt-16 md:mt-24">
           <div className="max-w-6xl mx-auto px-4">
             <h2 className="font-serif text-3xl text-emerald-800">Sabores de Galicia</h2>
           </div>
         </section>
 
-        {/* MOMENTOS */}
         <section id="momentos" className="mt-16 md:mt-24">
           <div className="max-w-6xl mx-auto px-4">
             <h2 className="font-serif text-3xl text-emerald-800">Momentos y Gente</h2>
           </div>
         </section>
 
-        {/* GALERÍA */}
         <section id="galeria" className="mt-16 md:mt-24">
           <div className="max-w-6xl mx-auto px-4">
             <h2 className="font-serif text-3xl text-emerald-800">Galería</h2>
           </div>
         </section>
 
-        {/* CONCLUSIÓN */}
         <section id="conclusion" className="mt-16 md:mt-24 print:break-before-page">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="font-serif text-3xl text-emerald-800">Conclusión</h2>
@@ -176,7 +159,6 @@ export default function Galicia2025Revista() {
           </div>
         </section>
 
-        {/* CRÉDITOS */}
         <section id="creditos" className="mt-16 md:mt-24 mb-24">
           <div className="max-w-6xl mx-auto px-4">
             <h2 className="font-serif text-2xl text-emerald-800">Créditos & Agradecimientos</h2>
