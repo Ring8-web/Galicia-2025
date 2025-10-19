@@ -1,16 +1,12 @@
-# Galicia 2025 — Vercel Ready
+# Galicia 2025 — Producción con Día 1 relleno
 
-## Deploy (Vercel)
-- Framework: Vite
-- Build Command: `npm run build`
-- Output Directory: `dist`
+## Uso local
+npm install
+npm run dev
 
-### Pasos rápidos
-1. `npm install`
-2. `git init && git add . && git commit -m "init"`
-3. Crea repo en GitHub y `git remote add origin ... && git push -u origin main`
-4. En Vercel: Importa el repo → Deploy
+## Deploy en Vercel
+- Importa el repo desde GitHub → Framework: Vite → Build: npm run build → Output: dist
 
-### Notas
-- `vite.config.js` + `@vitejs/plugin-react` incluidos.
-- `build` llama a Vite vía `node` para evitar errores 126.
+## Contenido
+- Día 1 viene relleno (Santiago): mapa, timeline, destinos, sabores, momentos, galería.
+- Sube tus audios a public/audios/ y fotos a public/fotos/ si prefieres rutas locales.
