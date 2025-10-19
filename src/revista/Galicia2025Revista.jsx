@@ -60,8 +60,8 @@ export default function Galicia2025Revista() {
       <main className="pt-16">
         {/* PORTADA */}
         <section id="portada" className="relative min-h-[88vh] grid place-items-center">
-          <div className="absolute inset-0">
-            <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-slate-900">
+            <div className="w-full h-full bg-[url('/fotos/Galicia.jpg')] bg-contain bg-center bg-no-repeat" />
           </div>
           <div className="absolute inset-0 bg-slate-900/40" />
           <div className="relative max-w-4xl mx-auto px-6 text-center text-white">
@@ -231,7 +231,7 @@ export default function Galicia2025Revista() {
                     <h4 className="font-serif text-2xl text-slate-800">Galería</h4>
                     <div className="mt-3 columns-1 sm:columns-2 lg:columns-3 gap-4 [column-fill:_balance]">
                       {[
-                        "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop",
+                        "/fotos/dia1-1.jpg",
                         "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop",
                         "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1200&auto=format&fit=crop",
                         "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
