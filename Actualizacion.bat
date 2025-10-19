@@ -1,35 +1,34 @@
 @echo off
-title Galicia 2025 - Deploy Automático a Producción
+title Galicia 2025 - Deploy Automático (Ring8-web)
 echo =============================================
 echo   🚀 Publicando Galicia 2025 en Vercel
 echo =============================================
 
-:: Verificar si existe .git
 if not exist .git (
-    echo ⚠️ No hay repositorio Git inicializado.
-    echo Ejecuta 'git init' y configura el remoto antes del primer uso.
-    pause
-    exit /b
+    echo Inicializando repositorio Git...
+    git init
+    git branch -M main
+    git remote add origin https://github.com/Ring8-web/galicia2025.git
 )
 
 echo.
-echo 📦 Guardando cambios locales...
+echo 📦 Guardando cambios...
 git add .
-git commit -m "Actualización automática %date% %time%"
-echo.
+git commit -m "Actualizacion automatica %date% %time%"
 
-echo 🌍 Subiendo a GitHub (y activando Vercel build)...
-git push
 echo.
+echo 🌍 Subiendo a GitHub (Ring8-web)...
+git push -u origin main
 
 if %errorlevel% neq 0 (
-    echo ❌ Error al subir cambios. Revisa conexión o autenticación.
+    echo ❌ Error al hacer push. Revisa conexión o autenticación.
     pause
     exit /b
 )
 
-echo ✅ Listo! Tu sitio se actualizará automáticamente en Vercel.
-echo 🕐 Espera 1-2 minutos y revisa tu enlace de producción:
+echo.
+echo ✅ Listo! Vercel lanzará el deploy automáticamente.
+echo 🕐 Espera 1–2 minutos y revisa tu enlace:
 echo     👉 https://galicia2025.vercel.app
 echo.
 pause
