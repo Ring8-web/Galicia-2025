@@ -27,7 +27,7 @@ if %errorlevel% neq 0 (
 )
 
 echo.
-echo ✅ Listo! Vercel lanzará el deploy automáticamente.
+echo ✅ Listo! Vercel lanzara el deploy automaticamente.
 echo 🕐 Espera 1–2 minutos y revisa tu enlace:
 echo     👉 https://galicia2025.vercel.app
 echo.
