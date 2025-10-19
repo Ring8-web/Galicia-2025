@@ -60,7 +60,11 @@ export default function Galicia2025Revista() {
       <main className="pt-16">
         {/* PORTADA */}
         <section id="portada" className="relative min-h-[88vh] grid place-items-center">
+<<<<<<< HEAD
           <div className="absolute inset-0 bg-slate-900">
+=======
+          <div className="absolute inset-0">
+>>>>>>> abfb87d99f007f0c42eb72873271b8005dbd6b30
             <div className="w-full h-full bg-[url('/fotos/Galicia.jpg')] bg-contain bg-center bg-no-repeat" />
           </div>
           <div className="absolute inset-0 bg-slate-900/40" />
