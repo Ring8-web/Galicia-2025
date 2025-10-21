@@ -1,31 +1,28 @@
-Galicia 2025 — One Click Deploy (.bat)
-==========================================
+Galicia 2025 — Deploy FORZANDO medias (.bat)
+=================================================
 
-Este script hace TODO en un solo paso cuando TÚ quieras:
-- Instala dependencias si faltan
-- (opcional) actualiza ramas/remote si no están
-- Compila (`npm run build`)
-- Crea commit con fecha/hora (o usa un mensaje opcional)
-- Hace push a GitHub (rama main) → Vercel se despliega solo
+Este .bat sube y actualiza TODO, forzando la inclusión de fotos/audios
+aunque tu .gitignore ignore `public/`.
 
-Cómo usar
----------
-1) Copia `one-click-deploy.bat` en la **raíz del proyecto**.
-2) Doble clic para ejecutar. También puedes pasar un mensaje:
-   one-click-deploy.bat "Cambio portada y galería Día 1"
+Qué hace:
+1) Comprueba Git/Node/npm
+2) Cambia a la carpeta del script
+3) Inicializa Git si falta (rama main)
+4) Configura origin -> https://github.com/Ring8-web/Galicia-2025.git si no existe
+5) Instala dependencias (npm ci / npm install)
+6) Compila (npm run build)
+7) Añade TODO con git add .
+8) Fuerza la inclusión de `public/fotos/**`, `public/audios/**` y ficheros sueltos en `public/`
+9) Commit con fecha/hora (o mensaje opcional)
+10) Push a main (Vercel desplegará)
+11) Abre producción: https://galicia2025.vercel.app
+12) Guarda log en deploy-force-media-YYYY-MM-DD_HH-mm-ss.txt
 
-Requisitos (una sola vez)
--------------------------
-- Tener Git y Node instalados (git --version, node -v, npm -v).
-- Haber creado tu repo en GitHub: https://github.com/Ring8-web/galicia2025.git
-- En la PRIMERA vez, si el remoto no está configurado, el script lo configurará
-  y fijará la rama 'main'. Si es un proyecto totalmente nuevo, es posible que
-  necesites este primer push manual:
-    git add .
-    git commit -m "init"
-    git push -u origin main
+Uso:
+- Pon `deploy-force-media.bat` en la raíz del proyecto (junto a package.json)
+- Doble clic para ejecutarlo
+- Opcional: mensaje de commit
+  deploy-force-media.bat "Añadir nuevas fotos Día 1"
 
-Producción
-----------
-Tu sitio en Vercel se actualizará automáticamente tras el push:
-https://galicia2025.vercel.app
+Nota:
+- Si tu .gitignore contiene `public/`, esto lo saltará añadiendo con `git add -f`.

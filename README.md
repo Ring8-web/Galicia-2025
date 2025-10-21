@@ -1,12 +1,18 @@
-# Galicia 2025 — Producción con Día 1 relleno
+# Galicia 2025 — Revista web (scroll) con días y galerías en /public/fotos
 
-## Uso local
+## Editar
+- Fotos (.jpg) en: `public/fotos/` → la galería del Día 1 ya apunta a dia1-1.jpg ... dia1-6.jpg
+- Audio opcional en: `public/audios/`
+- Textos: `src/revista/Galicia2025Revista.jsx`
+
+## Local
 npm install
 npm run dev
 
-## Deploy en Vercel
-- Importa el repo desde GitHub → Framework: Vite → Build: npm run build → Output: dist
-
-## Contenido
-- Día 1 viene relleno (Santiago): mapa, timeline, destinos, sabores, momentos, galería.
-- Sube tus audios a public/audios/ y fotos a public/fotos/ si prefieres rutas locales.
+## Deploy (un clic)
+Doble clic en `deploy-revista.bat`:
+- genera un ID de build para evitar caché
+- compila
+- fuerza subida de `public/fotos/**` y `public/audios/**`
+- commit + push a `main` (repo: Ring8-web/Galicia-2025.git)
+- Vercel despliega automáticamente
