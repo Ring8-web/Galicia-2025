@@ -1,0 +1,5 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.font-serif{font-family:ui-serif,Georgia,Cambria,'Times New Roman',Times,serif;}
+.prose p{margin-bottom:.75rem;}
