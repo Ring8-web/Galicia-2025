@@ -1,8 +1,0 @@
-==== Galicia 2025 Deploy (FORCE MEDIA) - 2025-10-19_23-19-48 ==== 
-Carpeta: C:\Users\Usuario\SynologyDrive\Galicia 2025 
-Repo URL: https://github.com/Ring8-web/Galicia-2025.git 
-Rama: main 
-[INFO] Versiones 
-git version 2.51.1.windows.1
-v22.20.0
-10.9.3

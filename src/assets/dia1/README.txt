@@ -1,1 +1,0 @@
-Coloca aquí tus fotos .jpg del Día 1. La galería las carga automáticamente.
